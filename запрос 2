@@ -1,1 +1,0 @@
-SELECT track AS "Номер", CASE WHEN finished THEN 2 WHEN cancelled THEN -1 WHEN "inDelivery" THEN 1 ELSE 0 END AS "Статус" FROM "Orders";
