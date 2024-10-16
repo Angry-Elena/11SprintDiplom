@@ -1,0 +1,2 @@
+SELECT c.login AS "Курьер", COUNT(o.id) AS "В доставке" FROM "Couriers" AS c JOIN "Orders" AS o ON
+c.id = o."courierId" AND o."inDelivery" = true GROUP BY c.login;
